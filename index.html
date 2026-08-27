@@ -635,23 +635,23 @@
               <div class="flex justify-between items-center text-[11px] font-extrabold text-slate-400 mt-2">
                 <div class="flex flex-col items-center">
                   <span class="w-2.5 h-2.5 rounded-full bg-brand-500 ring-4 ring-brand-500/20 -mt-3.5 mb-1.5"></span>
-                  <span class="text-white">WK 01</span>
+                  <span class="text-white">WK 00</span>
                 </div>
                 <div class="flex flex-col items-center">
                   <span class="w-2.5 h-2.5 rounded-full bg-indigo-500 ring-4 ring-indigo-500/20 -mt-3.5 mb-1.5"></span>
-                  <span>WK 05</span>
+                  <span>WK 04</span>
                 </div>
                 <div class="flex flex-col items-center">
                   <span class="w-2.5 h-2.5 rounded-full bg-blue-500 ring-4 ring-blue-500/20 -mt-3.5 mb-1.5"></span>
-                  <span>WK 10</span>
+                  <span>WK 09</span>
                 </div>
                 <div class="flex flex-col items-center">
                   <span class="w-2.5 h-2.5 rounded-full bg-cyan-500 ring-4 ring-cyan-500/20 -mt-3.5 mb-1.5"></span>
-                  <span>WK 15</span>
+                  <span>WK 14</span>
                 </div>
                 <div class="flex flex-col items-center">
                   <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 ring-4 ring-emerald-500/20 -mt-3.5 mb-1.5"></span>
-                  <span class="text-white">WK 20</span>
+                  <span class="text-white">WK 19</span>
                 </div>
               </div>
             </div>
@@ -665,16 +665,16 @@
                 All 20 Weeks
               </button>
               <button onclick="filterPhase(1)" class="phase-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 text-slate-300 border border-slate-800 hover:border-brand-500/40 hover:text-white" data-phase="1">
-                Phase 01 <span class="text-[10px] text-slate-400 font-normal ml-0.5">(W01–05)</span>
+                Phase 01 <span class="text-[10px] text-slate-400 font-normal ml-0.5">(W00–04)</span>
               </button>
               <button onclick="filterPhase(2)" class="phase-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 text-slate-300 border border-slate-800 hover:border-brand-500/40 hover:text-white" data-phase="2">
-                Phase 02 <span class="text-[10px] text-slate-400 font-normal ml-0.5">(W06–10)</span>
+                Phase 02 <span class="text-[10px] text-slate-400 font-normal ml-0.5">(W05–09)</span>
               </button>
               <button onclick="filterPhase(3)" class="phase-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 text-slate-300 border border-slate-800 hover:border-brand-500/40 hover:text-white" data-phase="3">
-                Phase 03 <span class="text-[10px] text-slate-400 font-normal ml-0.5">(W11–15)</span>
+                Phase 03 <span class="text-[10px] text-slate-400 font-normal ml-0.5">(W10–14)</span>
               </button>
               <button onclick="filterPhase(4)" class="phase-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 text-slate-300 border border-slate-800 hover:border-brand-500/40 hover:text-white" data-phase="4">
-                Phase 04 <span class="text-[10px] text-slate-400 font-normal ml-0.5">(W16–20)</span>
+                Phase 04 <span class="text-[10px] text-slate-400 font-normal ml-0.5">(W15–19)</span>
               </button>
             </div>
           </div>
@@ -940,16 +940,16 @@
     // PROTOSEM 20-WEEK ARCHITECTURE & JOURNEY
     // ==========================================
     const protoSemPhases = [
-      { id: 1, name: "Phase 01", range: "Weeks 01–05", desc: "Foundation, Problem Discovery & Domain Immersion" },
-      { id: 2, name: "Phase 02", range: "Weeks 06–10", desc: "Technology Exploration, System Architecture & IoT" },
-      { id: 3, name: "Phase 03", range: "Weeks 11–15", desc: "Prototyping, Validation & Solution Iteration" },
-      { id: 4, name: "Phase 04", range: "Weeks 16–20", desc: "Venture Synthesis, Deployment & Demo Readiness" }
+      { id: 1, name: "Phase 01", range: "Weeks 00–04", desc: "Foundation, Problem Discovery & Domain Immersion" },
+      { id: 2, name: "Phase 02", range: "Weeks 05–09", desc: "Technology Exploration, System Architecture & IoT" },
+      { id: 3, name: "Phase 03", range: "Weeks 10–14", desc: "Prototyping, Validation & Solution Iteration" },
+      { id: 4, name: "Phase 04", range: "Weeks 15–19", desc: "Venture Synthesis, Deployment & Demo Readiness" }
     ];
 
     // Data-driven array for all 20 weeks
     const protoSemWeeks = Array.from({ length: 20 }, (_, i) => {
-      const weekNum = i + 1;
-      const phaseNum = Math.ceil(weekNum / 5);
+      const weekNum = i;
+      const phaseNum = Math.floor(weekNum / 5) + 1;
       const paddedWeek = String(weekNum).padStart(2, '0');
       return {
         week: weekNum,
