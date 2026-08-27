@@ -951,6 +951,17 @@
       const weekNum = i;
       const phaseNum = Math.floor(weekNum / 5) + 1;
       const paddedWeek = String(weekNum).padStart(2, '0');
+
+      if (weekNum === 0) {
+        return {
+          week: weekNum,
+          padded: paddedWeek,
+          phase: phaseNum,
+          slug: `week-${paddedWeek}.html`,
+          status: "published",
+          title: "Stepping into the Unknown"
+        };
+      }
       return {
         week: weekNum,
         padded: paddedWeek,
@@ -993,13 +1004,8 @@
             <!-- 5 Week Cards for this Phase -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
               ${weeksInPhase.map(w => `
-                <div 
-                  onclick="openWeekModal(${w.week})" 
-                  tabindex="0" 
-                  role="button"
-                  aria-label="View Week ${w.padded} Dispatch placeholder"
-                  onkeydown="if(event.key==='Enter'||event.key===' '){ openWeekModal(${w.week}); }"
-                  class="week-card bento-card rounded-2xl p-4 flex flex-col justify-between cursor-pointer group hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-brand-500 relative overflow-hidden min-h-[140px]"
+                <${w.status === 'published' ? `a href="protosem/${w.slug}"` : `div onclick="openWeekModal(${w.week})" tabindex="0" role="button" aria-label="View Week ${w.padded} Dispatch placeholder" onkeydown="if(event.key==='Enter'||event.key===' '){ openWeekModal(${w.week}); }"`} 
+                  class="week-card bento-card rounded-2xl p-4 flex flex-col justify-between cursor-pointer group hover:scale-[1.03] focus:outline-none focus:ring-2 focus:ring-brand-500 relative overflow-hidden min-h-[140px] block"
                 >
                   <!-- Ambient card corner accent -->
                   <div class="absolute -top-6 -right-6 w-16 h-16 bg-brand-500/10 rounded-full blur-xl group-hover:bg-brand-500/25 transition-all"></div>
@@ -1019,19 +1025,26 @@
                     <div class="text-lg font-black tracking-tight text-white group-hover:text-brand-300 transition-colors">
                       WEEK ${w.padded}
                     </div>
+                    ${w.status === 'published' ? `
+                    <div class="text-[10px] font-semibold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+                      <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                      <span>Published Story</span>
+                    </div>
+                    ` : `
                     <div class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
                       <span class="w-1.5 h-1.5 rounded-full bg-indigo-400/80"></span>
                       <span class="group-hover:hidden">Coming Soon</span>
                       <span class="hidden group-hover:inline normal-case text-brand-300 tracking-normal">This is a future story / blog.</span>
                     </div>
+                    `}
                   </div>
 
                   <!-- Card Bottom Detail -->
                   <div class="pt-2 border-t border-slate-800/80 text-[10px] text-slate-400 group-hover:text-slate-300 flex items-center justify-between transition-colors">
-                    <span>Field Notes</span>
-                    <span class="font-mono">#${w.padded}</span>
+                    <span class="truncate pr-2">${w.title || 'Field Notes'}</span>
+                    <span class="font-mono shrink-0">#${w.padded}</span>
                   </div>
-                </div>
+                </${w.status === 'published' ? 'a' : 'div'}>
               `).join('')}
             </div>
           </div>
