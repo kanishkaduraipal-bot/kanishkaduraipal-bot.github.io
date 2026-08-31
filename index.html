@@ -962,6 +962,17 @@
           title: "Stepping into the Unknown"
         };
       }
+      
+      if (weekNum === 1) {
+        return {
+          week: weekNum,
+          padded: paddedWeek,
+          phase: phaseNum,
+          slug: `week-${paddedWeek}.html`,
+          status: "published",
+          title: "Strategy, Tech & Design"
+        };
+      }
       return {
         week: weekNum,
         padded: paddedWeek,
