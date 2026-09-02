@@ -43,22 +43,22 @@
 
   <style>
     body {
-      background-color: #0b0f19;
-      color: #f3f4f6;
+      background-color: #f4f8fc;
+      color: #1e293b;
     }
     .prose-custom p {
       margin-bottom: 1.25rem;
       line-height: 1.75;
-      color: #cbd5e1;
+      color: #475569;
     }
     .prose-custom h2 {
       font-size: 1.5rem;
       font-weight: 700;
-      color: #ffffff;
+      color: #0f172a;
       margin-top: 2.5rem;
       margin-bottom: 1rem;
       padding-bottom: 0.5rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(15, 23, 42, 0.1);
     }
     .prose-custom ul {
       list-style-type: none;
@@ -70,7 +70,7 @@
       padding-left: 1.5rem;
       margin-bottom: 1rem;
       line-height: 1.6;
-      color: #cbd5e1;
+      color: #475569;
     }
     .prose-custom li::before {
       content: '→';
@@ -80,12 +80,12 @@
       font-weight: bold;
     }
     .prose-custom strong {
-      color: #ffffff;
+      color: #0f172a;
       font-weight: 600;
     }
     .bento-card {
-      background: linear-gradient(135deg, rgba(19, 27, 46, 0.85) 0%, rgba(15, 23, 42, 0.95) 100%);
-      border: 1px solid rgba(99, 102, 241, 0.15);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 100%);
+      border: 1px solid rgba(147, 197, 253, 0.4);
       backdrop-filter: blur(16px);
     }
   </style>
@@ -93,9 +93,9 @@
 <body class="min-h-screen relative antialiased selection:bg-brand-500 selection:text-white pb-20">
 
   <!-- Navigation -->
-  <nav class="sticky top-0 z-50 backdrop-blur-xl bg-[#0b0f19]/80 border-b border-brand-border/60">
+  <nav class="sticky top-0 z-50 backdrop-blur-xl bg-[#0b0f19]/80 border-b border-blue-200/60">
     <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="../index.html#protosem" class="inline-flex items-center space-x-2 text-sm font-semibold text-slate-300 hover:text-white transition-colors">
+      <a href="../index.html#protosem" class="inline-flex items-center space-x-2 text-sm font-semibold text-slate-600 hover:text-white transition-colors">
         <i class="fa-solid fa-arrow-left"></i>
         <span>Back to Portfolio</span>
       </a>
@@ -109,17 +109,17 @@
     <!-- Header -->
     <header class="space-y-6 mb-12">
       <div class="space-y-3">
-        <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
           Week 0 at PRICE Protosem: Stepping into the Unknown
         </h1>
-        <div class="flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-400">
+        <div class="flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-500">
           <span class="flex items-center gap-1.5"><i class="fa-solid fa-building text-brand-400"></i> Forge Innovation & Ventures</span>
           <span>•</span>
           <span class="flex items-center gap-1.5"><i class="fa-regular fa-clock text-indigo-400"></i> ~3 Min Read</span>
         </div>
       </div>
       
-      <p class="text-lg text-slate-300 font-medium leading-relaxed border-l-4 border-brand-500 pl-4">
+      <p class="text-lg text-slate-600 font-medium leading-relaxed border-l-4 border-brand-500 pl-4">
         Starting any intensive fellowship brings a sudden shift in pace. Walking into Week 0 of the PRICE Protosem at Forge Innovation & Ventures, I felt a familiar tension between hesitation and curiosity. Moving out of routine comfort zones into a dynamic cohort is rarely seamless, but the first few days quickly turned initial apprehension into momentum.
       </p>
     </header>
@@ -154,33 +154,33 @@
 
       <!-- Highlight Section -->
       <div class="my-12 bento-card rounded-3xl p-6 sm:p-8 space-y-6">
-        <div class="flex items-center gap-3 border-b border-slate-700/50 pb-4">
+        <div class="flex items-center gap-3 border-b border-blue-200/50 pb-4">
           <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-lg">
             <i class="fa-solid fa-microphone-lines"></i>
           </div>
           <div>
-            <h3 class="text-lg font-bold text-white uppercase tracking-wider">Week Highlight</h3>
+            <h3 class="text-lg font-bold text-slate-900 uppercase tracking-wider">Week Highlight</h3>
             <p class="text-xs text-amber-300/80 font-medium">Inaugural Address</p>
           </div>
         </div>
 
         <!-- Week Image -->
-        <div class="w-full aspect-video bg-slate-800 rounded-xl border border-slate-700 flex flex-col items-center justify-center text-slate-500 overflow-hidden relative group">
+        <div class="w-full aspect-video bg-blue-50 rounded-xl border border-blue-200 flex flex-col items-center justify-center text-slate-500 overflow-hidden relative group">
           <img src="images/keynote.jpg" alt="Keynote Speech by Mr. Kumar Rajagopalan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
         </div>
         
         <div class="space-y-4">
           <div class="flex items-start gap-3">
             <i class="fa-solid fa-quote-left text-brand-500 text-xl mt-1 opacity-50"></i>
-            <p class="text-sm sm:text-base italic text-slate-300 leading-relaxed">
+            <p class="text-sm sm:text-base italic text-slate-600 leading-relaxed">
               "His address cut through theoretical innovation to focus on ground realities—how changing consumer behavior demands agile operational models and why adaptability is the only real moat in modern business."
             </p>
           </div>
           
-          <div class="pt-4 border-t border-slate-700/50 text-xs sm:text-sm">
-            <p class="font-bold text-white">Mr. Kumar Rajagopalan</p>
+          <div class="pt-4 border-t border-blue-200/50 text-xs sm:text-sm">
+            <p class="font-bold text-slate-900">Mr. Kumar Rajagopalan</p>
             <p class="text-brand-300">CEO, Retailers Association of India (RAI)</p>
-            <p class="text-slate-400 mt-2 italic border-l-2 border-slate-600 pl-3">Caption: Mr. Kumar Rajagopalan addressing the cohort on market disruption and adaptive strategy.</p>
+            <p class="text-slate-500 mt-2 italic border-l-2 border-slate-600 pl-3">Caption: Mr. Kumar Rajagopalan addressing the cohort on market disruption and adaptive strategy.</p>
           </div>
         </div>
       </div>
@@ -195,8 +195,8 @@
 
     </article>
     
-    <div class="mt-16 pt-8 border-t border-slate-800 text-center">
-      <a href="../index.html#protosem" class="inline-flex items-center space-x-2 px-6 py-3 rounded-xl font-bold text-sm bg-brand-600 hover:bg-brand-500 text-white transition-all shadow-lg shadow-brand-500/25">
+    <div class="mt-16 pt-8 border-t border-blue-100 text-center">
+      <a href="../index.html#protosem" class="inline-flex items-center space-x-2 px-6 py-3 rounded-xl font-bold text-sm bg-brand-600 hover:bg-brand-500 text-slate-900 transition-all shadow-lg shadow-brand-500/25">
         <i class="fa-solid fa-check mr-1"></i>
         <span>Complete Week 00 • Back to Timeline</span>
       </a>
