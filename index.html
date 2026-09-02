@@ -63,8 +63,8 @@
 
   <style>
     body {
-      background-color: #0b0f19;
-      color: #f3f4f6;
+      background-color: #f4f8fc;
+      color: #1e293b;
       font-family: 'Plus Jakarta Sans', sans-serif;
       overflow-x: hidden;
     }
@@ -81,16 +81,17 @@
 
     /* Bento Card Glass & Border */
     .bento-card {
-      background: linear-gradient(135deg, rgba(19, 27, 46, 0.85) 0%, rgba(15, 23, 42, 0.95) 100%);
-      border: 1px solid rgba(99, 102, 241, 0.15);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 100%);
+      border: 1px solid rgba(147, 197, 253, 0.4);
       backdrop-filter: blur(16px);
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
     }
 
     .bento-card:hover {
-      border-color: rgba(99, 102, 241, 0.45);
+      border-color: rgba(96, 165, 250, 0.6);
       transform: translateY(-4px);
-      box-shadow: 0 20px 35px -10px rgba(79, 70, 229, 0.18);
+      box-shadow: 0 20px 35px -10px rgba(59, 130, 246, 0.15);
     }
 
     /* 3D Tilt Card Highlights */
@@ -108,14 +109,14 @@
       width: 8px;
     }
     ::-webkit-scrollbar-track {
-      background: #0b0f19;
+      background: #f4f8fc;
     }
     ::-webkit-scrollbar-thumb {
-      background: #1f293d;
+      background: #cbd5e1;
       border-radius: 4px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: #4f46e5;
+      background: #94a3b8;
     }
   </style>
 </head>
@@ -127,20 +128,20 @@
   <div class="glow-bg w-80 h-80 bg-cyan-600 bottom-20 left-10 animate-blob" style="animation-delay: 6s;"></div>
 
   <!-- Navigation Bar -->
-  <header class="sticky top-0 z-50 backdrop-blur-xl bg-brand-dark/80 border-b border-brand-border/60">
+  <header class="sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-blue-200/60">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="#" class="flex items-center space-x-3 group">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-blue flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-brand-500/25 group-hover:scale-105 transition-transform">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-blue flex items-center justify-center text-slate-900 font-bold text-lg shadow-lg shadow-brand-500/25 group-hover:scale-105 transition-transform">
           KD
         </div>
         <div class="flex flex-col">
-          <span class="font-bold text-lg tracking-tight text-white group-hover:text-brand-300 transition-colors">Kanishka Duraipal</span>
-          <span class="text-xs text-slate-400 font-medium">BBA • Innovation & Strategy</span>
+          <span class="font-bold text-lg tracking-tight text-slate-900 group-hover:text-brand-300 transition-colors">Kanishka Duraipal</span>
+          <span class="text-xs text-slate-500 font-medium">BBA • Innovation & Strategy</span>
         </div>
       </a>
 
       <!-- Desktop Nav Links -->
-      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-300">
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-600">
         <a href="#about" class="hover:text-white transition-colors">About</a>
         <a href="#experience" class="hover:text-white transition-colors">Experience</a>
         <a href="#protosem" class="hover:text-white transition-colors flex items-center gap-1.5 text-brand-300">
@@ -159,7 +160,7 @@
           <i class="fa-solid fa-file-lines text-xs"></i>
           <span>ATS Resume</span>
         </a>
-        <a href="#contact" class="hidden sm:inline-flex items-center space-x-2 px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-brand-600 to-brand-blue text-white hover:opacity-95 shadow-lg shadow-brand-600/25 hover:scale-105 transition-all">
+        <a href="#contact" class="hidden sm:inline-flex items-center space-x-2 px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-brand-600 to-brand-blue text-slate-900 hover:opacity-95 shadow-lg shadow-brand-600/25 hover:scale-105 transition-all">
           <span>Let's Talk</span>
           <i class="fa-solid fa-arrow-right text-xs"></i>
         </a>
@@ -190,12 +191,12 @@
         </h1>
 
         <!-- Typed.js Dynamic Roles -->
-        <div class="text-xl sm:text-2xl text-slate-300 font-semibold flex items-center space-x-2 min-h-[40px]">
+        <div class="text-xl sm:text-2xl text-slate-600 font-semibold flex items-center space-x-2 min-h-[40px]">
           <span>I am a</span>
           <span id="typed-roles" class="text-brand-400 border-b-2 border-brand-500 pb-0.5"></span>
         </div>
 
-        <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl">
+        <p class="text-slate-500 text-base sm:text-lg leading-relaxed max-w-2xl">
           Pursuing a <strong class="text-slate-200">Bachelor of Business Administration (BBA)</strong> with hands-on experience in 
           <strong class="text-slate-200">venture acceleration, market research, and operations management</strong>. 
           Currently interning at <span class="text-brand-300 font-medium">Forge Innovation & Ventures</span>, passionate about blending data-driven business strategy with emerging technology trends.
@@ -203,34 +204,34 @@
 
         <!-- Stats Counter Row -->
         <div class="grid grid-cols-3 gap-4 pt-4 max-w-lg">
-          <div class="p-4 rounded-2xl bg-brand-card/70 border border-brand-border/80 text-center">
-            <div class="text-2xl sm:text-3xl font-extrabold text-white">5+ Mo</div>
-            <div class="text-xs text-slate-400 font-medium mt-1">Innovation Internship</div>
+          <div class="p-4 rounded-2xl bg-brand-card/70 border border-blue-200/80 text-center">
+            <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">5+ Mo</div>
+            <div class="text-xs text-slate-500 font-medium mt-1">Innovation Internship</div>
           </div>
-          <div class="p-4 rounded-2xl bg-brand-card/70 border border-brand-border/80 text-center">
+          <div class="p-4 rounded-2xl bg-brand-card/70 border border-blue-200/80 text-center">
             <div class="text-2xl sm:text-3xl font-extrabold text-brand-400">2+</div>
-            <div class="text-xs text-slate-400 font-medium mt-1">Industry Internships</div>
+            <div class="text-xs text-slate-500 font-medium mt-1">Industry Internships</div>
           </div>
-          <div class="p-4 rounded-2xl bg-brand-card/70 border border-brand-border/80 text-center">
+          <div class="p-4 rounded-2xl bg-brand-card/70 border border-blue-200/80 text-center">
             <div class="text-2xl sm:text-3xl font-extrabold text-blue-400">🏆 1</div>
-            <div class="text-xs text-slate-400 font-medium mt-1">Gandhi Scholar</div>
+            <div class="text-xs text-slate-500 font-medium mt-1">Gandhi Scholar</div>
           </div>
         </div>
 
         <!-- Hero Actions -->
         <div class="flex flex-wrap gap-4 pt-2">
-          <a href="#experience" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-brand-600 to-brand-blue text-white shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:scale-[1.02] transition-all flex items-center space-x-2">
+          <a href="#experience" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-brand-600 to-brand-blue text-slate-900 shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:scale-[1.02] transition-all flex items-center space-x-2">
             <span>Explore Experience</span>
             <i class="fa-solid fa-briefcase text-xs"></i>
           </a>
-          <a href="resume.html" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-slate-800/80 text-slate-200 border border-slate-700 hover:border-brand-500/50 hover:bg-slate-800 transition-all flex items-center space-x-2">
+          <a href="resume.html" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-blue-50/80 text-slate-200 border border-blue-200 hover:border-brand-500/50 hover:bg-slate-800 transition-all flex items-center space-x-2">
             <i class="fa-solid fa-file-arrow-down text-brand-400"></i>
             <span>View Resume</span>
           </a>
-          <a href="https://www.linkedin.com/in/kanishka-duraipal-737237307" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-xl bg-slate-800/80 border border-slate-700 hover:text-brand-300 hover:border-brand-500 transition-all text-slate-300 flex items-center justify-center">
+          <a href="https://www.linkedin.com/in/kanishka-duraipal-737237307" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-xl bg-blue-50/80 border border-blue-200 hover:text-brand-300 hover:border-brand-500 transition-all text-slate-600 flex items-center justify-center">
             <i class="fa-brands fa-linkedin text-lg"></i>
           </a>
-          <a href="https://github.com/kanishkaduraipal-bot" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-xl bg-slate-800/80 border border-slate-700 hover:text-brand-300 hover:border-brand-500 transition-all text-slate-300 flex items-center justify-center">
+          <a href="https://github.com/kanishkaduraipal-bot" target="_blank" rel="noopener noreferrer" class="p-3.5 rounded-xl bg-blue-50/80 border border-blue-200 hover:text-brand-300 hover:border-brand-500 transition-all text-slate-600 flex items-center justify-center">
             <i class="fa-brands fa-github text-lg"></i>
           </a>
         </div>
@@ -251,37 +252,37 @@
                   <!-- Subtle ambient pattern inside emblem -->
                   <div class="w-full h-full rounded-xl bg-slate-950 flex flex-col items-center justify-center relative border border-brand-500/30">
                     <span class="text-3xl font-black tracking-wider bg-gradient-to-r from-blue-400 via-indigo-300 to-brand-300 bg-clip-text text-transparent">KD</span>
-                    <span class="text-[9px] uppercase tracking-widest text-slate-400 font-bold mt-0.5">BBA Scholar</span>
+                    <span class="text-[9px] uppercase tracking-widest text-slate-500 font-bold mt-0.5">BBA Scholar</span>
                   </div>
                 </div>
-                <div class="absolute -bottom-2 -right-2 bg-emerald-500 border-2 border-brand-card text-white text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center space-x-1 shadow-md">
+                <div class="absolute -bottom-2 -right-2 bg-emerald-500 border-2 border-brand-card text-slate-900 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center space-x-1 shadow-md">
                   <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
                   <span>AVAILABLE</span>
                 </div>
               </div>
 
               <div class="space-y-1">
-                <h3 class="text-2xl font-extrabold text-white tracking-tight">Kanishka Duraipal</h3>
+                <h3 class="text-2xl font-extrabold text-slate-900 tracking-tight">Kanishka Duraipal</h3>
                 <p class="text-sm font-semibold text-brand-300">BBA Graduate Candidate</p>
-                <p class="text-xs text-slate-400">Coimbatore, India • Open to Global Roles</p>
+                <p class="text-xs text-slate-500">Coimbatore, India • Open to Global Roles</p>
               </div>
 
               <!-- Quick Badges Inside Tilt Card -->
               <div class="w-full space-y-2.5 pt-4">
-                <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/70 border border-slate-800 text-xs">
-                  <span class="text-slate-400 flex items-center gap-2">
+                <div class="flex items-center justify-between p-3 rounded-xl bg-white/70 border border-blue-100 text-xs">
+                  <span class="text-slate-500 flex items-center gap-2">
                     <i class="fa-solid fa-building-columns text-brand-400"></i> Primary Focus
                   </span>
                   <span class="text-slate-200 font-semibold">Innovation & Ventures</span>
                 </div>
-                <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/70 border border-slate-800 text-xs">
-                  <span class="text-slate-400 flex items-center gap-2">
+                <div class="flex items-center justify-between p-3 rounded-xl bg-white/70 border border-blue-100 text-xs">
+                  <span class="text-slate-500 flex items-center gap-2">
                     <i class="fa-solid fa-award text-yellow-400"></i> Honor
                   </span>
                   <span class="text-slate-200 font-semibold">Mahatma Gandhi Scholar</span>
                 </div>
-                <div class="flex items-center justify-between p-3 rounded-xl bg-slate-900/70 border border-slate-800 text-xs">
-                  <span class="text-slate-400 flex items-center gap-2">
+                <div class="flex items-center justify-between p-3 rounded-xl bg-white/70 border border-blue-100 text-xs">
+                  <span class="text-slate-500 flex items-center gap-2">
                     <i class="fa-solid fa-chart-line text-blue-400"></i> Core Competency
                   </span>
                   <span class="text-slate-200 font-semibold">Market & Retail Research</span>
@@ -308,8 +309,8 @@
         <i class="fa-solid fa-cubes"></i>
         <span>Curated Overview</span>
       </div>
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Experience & Highlights Bento Grid</h2>
-      <p class="text-slate-400 text-sm max-w-xl mx-auto">Explore my practical industry engagements, academic research projects, certifications, and core competencies.</p>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Experience & Highlights Bento Grid</h2>
+      <p class="text-slate-500 text-sm max-w-xl mx-auto">Explore my practical industry engagements, academic research projects, certifications, and core competencies.</p>
     </div>
 
     <!-- BENTO GRID SECTION -->
@@ -327,22 +328,22 @@
             </div>
           </div>
           
-          <h3 class="text-2xl font-bold text-white">Forge Innovation & Ventures</h3>
+          <h3 class="text-2xl font-bold text-slate-900">Forge Innovation & Ventures</h3>
           <p class="text-sm font-semibold text-brand-300">Innovation & Venture Development Intern</p>
           
-          <p class="text-slate-300 text-sm leading-relaxed">
+          <p class="text-slate-600 text-sm leading-relaxed">
             Actively driving innovation initiatives, startup venture ecosystem research, retail strategy models, and commercialization pathways. Collaborating with cross-functional teams to analyze emerging technologies and develop structured business feasibility frameworks.
           </p>
 
           <div class="pt-2 flex flex-wrap gap-2">
-            <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Venture Acceleration</span>
-            <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Emerging Technologies</span>
-            <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Business Strategy</span>
-            <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Retail & Innovation</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-blue-50 text-slate-600 border border-blue-200">Venture Acceleration</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-blue-50 text-slate-600 border border-blue-200">Emerging Technologies</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-blue-50 text-slate-600 border border-blue-200">Business Strategy</span>
+            <span class="text-xs px-2.5 py-1 rounded-md bg-blue-50 text-slate-600 border border-blue-200">Retail & Innovation</span>
           </div>
         </div>
 
-        <div class="pt-6 border-t border-slate-800/80 mt-6 flex items-center justify-between text-xs text-slate-400">
+        <div class="pt-6 border-t border-blue-100/80 mt-6 flex items-center justify-between text-xs text-slate-500">
           <span><i class="fa-solid fa-calendar-check text-brand-400 mr-1.5"></i> 5-Month Tenure</span>
           <span class="text-brand-300 font-semibold">Active Experience</span>
         </div>
@@ -355,12 +356,12 @@
             <i class="fa-solid fa-trophy"></i>
           </div>
           <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">Prestigious Honor</span>
-          <h3 class="text-xl font-bold text-white leading-snug">Mahatma Gandhi Scholarship</h3>
-          <p class="text-xs text-slate-300 leading-relaxed">
+          <h3 class="text-xl font-bold text-slate-900 leading-snug">Mahatma Gandhi Scholarship</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
             Awarded for demonstrating exceptional academic rigor, character, leadership aptitude, and dedication to excellence throughout business studies.
           </p>
         </div>
-        <div class="mt-4 pt-3 border-t border-slate-800 flex items-center text-xs text-amber-300/80 font-medium">
+        <div class="mt-4 pt-3 border-t border-blue-100 flex items-center text-xs text-amber-300/80 font-medium">
           <i class="fa-solid fa-medal mr-2"></i> Academic Distinction Awardee
         </div>
       </div>
@@ -372,13 +373,13 @@
             <i class="fa-solid fa-industry"></i>
           </div>
           <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">Industrial Internship</span>
-          <h3 class="text-lg font-bold text-white">Shri Maalathi Engineering</h3>
+          <h3 class="text-lg font-bold text-slate-900">Shri Maalathi Engineering</h3>
           <p class="text-xs font-semibold text-brand-300">Production & Materials Management</p>
-          <p class="text-xs text-slate-300 leading-relaxed">
+          <p class="text-xs text-slate-600 leading-relaxed">
             Gained practical on-ground exposure to production workflows, material resource planning, inventory flow optimization, and operational efficiency.
           </p>
         </div>
-        <div class="mt-4 pt-3 border-t border-slate-800 text-xs text-slate-400 flex items-center justify-between">
+        <div class="mt-4 pt-3 border-t border-blue-100 text-xs text-slate-500 flex items-center justify-between">
           <span>Operations & Supply</span>
           <span class="text-blue-400 font-semibold">Completed</span>
         </div>
@@ -396,40 +397,40 @@
             </div>
           </div>
 
-          <h3 class="text-2xl font-bold text-white">Academic Projects & Market Studies</h3>
-          <p class="text-sm text-slate-300 leading-relaxed">
+          <h3 class="text-2xl font-bold text-slate-900">Academic Projects & Market Studies</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
             Conducted hands-on research across key business domains, translating theoretical business models into actionable insights:
           </p>
 
           <div class="grid sm:grid-cols-2 gap-3 pt-2">
-            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-              <div class="font-bold text-xs text-white flex items-center gap-1.5">
+            <div class="p-3 rounded-xl bg-white/60 border border-blue-100">
+              <div class="font-bold text-xs text-slate-900 flex items-center gap-1.5">
                 <i class="fa-solid fa-store text-brand-400"></i> Retail & Marketing
               </div>
-              <p class="text-[11px] text-slate-400 mt-1">Consumer behavior analysis, store dynamics, and promotional strategy assessment.</p>
+              <p class="text-[11px] text-slate-500 mt-1">Consumer behavior analysis, store dynamics, and promotional strategy assessment.</p>
             </div>
-            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-              <div class="font-bold text-xs text-white flex items-center gap-1.5">
+            <div class="p-3 rounded-xl bg-white/60 border border-blue-100">
+              <div class="font-bold text-xs text-slate-900 flex items-center gap-1.5">
                 <i class="fa-solid fa-lightbulb text-yellow-400"></i> Entrepreneurship
               </div>
-              <p class="text-[11px] text-slate-400 mt-1">Feasibility studies, business model canvas, and market viability validation.</p>
+              <p class="text-[11px] text-slate-500 mt-1">Feasibility studies, business model canvas, and market viability validation.</p>
             </div>
-            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-              <div class="font-bold text-xs text-white flex items-center gap-1.5">
+            <div class="p-3 rounded-xl bg-white/60 border border-blue-100">
+              <div class="font-bold text-xs text-slate-900 flex items-center gap-1.5">
                 <i class="fa-solid fa-magnifying-glass-chart text-cyan-400"></i> Market Research
               </div>
-              <p class="text-[11px] text-slate-400 mt-1">Primary survey design, competitive benchmarking, and quantitative data interpretation.</p>
+              <p class="text-[11px] text-slate-500 mt-1">Primary survey design, competitive benchmarking, and quantitative data interpretation.</p>
             </div>
-            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-              <div class="font-bold text-xs text-white flex items-center gap-1.5">
+            <div class="p-3 rounded-xl bg-white/60 border border-blue-100">
+              <div class="font-bold text-xs text-slate-900 flex items-center gap-1.5">
                 <i class="fa-solid fa-arrows-split-up-and-left text-indigo-400"></i> Operations Flow
               </div>
-              <p class="text-[11px] text-slate-400 mt-1">Material requisition cycles, supply chain bottlenecks, and process mapping.</p>
+              <p class="text-[11px] text-slate-500 mt-1">Material requisition cycles, supply chain bottlenecks, and process mapping.</p>
             </div>
           </div>
         </div>
 
-        <div class="pt-4 border-t border-slate-800 mt-4 text-xs text-slate-400 flex items-center justify-between">
+        <div class="pt-4 border-t border-blue-100 mt-4 text-xs text-slate-500 flex items-center justify-between">
           <span>Domain: Business Strategy & Analytics</span>
           <span class="text-brand-300 font-semibold">BBA Portfolio</span>
         </div>
@@ -442,7 +443,7 @@
             <i class="fa-brands fa-microsoft"></i>
           </div>
           <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Productivity Suite</span>
-          <h3 class="text-lg font-bold text-white">Microsoft Office Suite</h3>
+          <h3 class="text-lg font-bold text-slate-900">Microsoft Office Suite</h3>
           
           <div class="space-y-3 pt-2">
             <div>
@@ -450,7 +451,7 @@
                 <span class="text-slate-200">MS Excel (Data & Modeling)</span>
                 <span class="text-brand-400">Proficient</span>
               </div>
-              <div class="w-full bg-slate-800 rounded-full h-1.5">
+              <div class="w-full bg-blue-50 rounded-full h-1.5">
                 <div class="bg-gradient-to-r from-brand-blue to-brand-500 h-1.5 rounded-full" style="width: 90%"></div>
               </div>
             </div>
@@ -460,7 +461,7 @@
                 <span class="text-slate-200">MS PowerPoint (Executive Pitch)</span>
                 <span class="text-brand-400">Advanced</span>
               </div>
-              <div class="w-full bg-slate-800 rounded-full h-1.5">
+              <div class="w-full bg-blue-50 rounded-full h-1.5">
                 <div class="bg-gradient-to-r from-brand-blue to-brand-500 h-1.5 rounded-full" style="width: 95%"></div>
               </div>
             </div>
@@ -470,14 +471,14 @@
                 <span class="text-slate-200">MS Word (Business Reports)</span>
                 <span class="text-brand-400">Proficient</span>
               </div>
-              <div class="w-full bg-slate-800 rounded-full h-1.5">
+              <div class="w-full bg-blue-50 rounded-full h-1.5">
                 <div class="bg-gradient-to-r from-brand-blue to-brand-500 h-1.5 rounded-full" style="width: 92%"></div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="mt-4 pt-3 border-t border-slate-800 text-xs text-slate-400">
+        <div class="mt-4 pt-3 border-t border-blue-100 text-xs text-slate-500">
           Business Data Analysis & Executive Reporting
         </div>
       </div>
@@ -489,24 +490,24 @@
             <i class="fa-solid fa-certificate"></i>
           </div>
           <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Professional Development</span>
-          <h3 class="text-lg font-bold text-white">Certifications & Training</h3>
+          <h3 class="text-lg font-bold text-slate-900">Certifications & Training</h3>
           
           <div class="space-y-3 pt-1">
-            <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800">
-              <div class="font-bold text-xs text-white">TCS iON</div>
+            <div class="p-3 rounded-xl bg-white/70 border border-blue-100">
+              <div class="font-bold text-xs text-slate-900">TCS iON</div>
               <div class="text-[11px] text-brand-300 font-medium">Presentation Skills Certification</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Corporate communication & deck structuring</div>
+              <div class="text-[10px] text-slate-500 mt-0.5">Corporate communication & deck structuring</div>
             </div>
 
-            <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800">
-              <div class="font-bold text-xs text-white">Leap Learning Academy</div>
+            <div class="p-3 rounded-xl bg-white/70 border border-blue-100">
+              <div class="font-bold text-xs text-slate-900">Leap Learning Academy</div>
               <div class="text-[11px] text-brand-300 font-medium">Outbound Training Programme</div>
-              <div class="text-[10px] text-slate-400 mt-0.5">Team leadership, agility & problem solving</div>
+              <div class="text-[10px] text-slate-500 mt-0.5">Team leadership, agility & problem solving</div>
             </div>
           </div>
         </div>
 
-        <div class="mt-4 pt-3 border-t border-slate-800 text-xs text-emerald-400/80 font-medium">
+        <div class="mt-4 pt-3 border-t border-blue-100 text-xs text-emerald-400/80 font-medium">
           <i class="fa-solid fa-check-circle mr-1"></i> Verified Skill Programs
         </div>
       </div>
@@ -514,7 +515,7 @@
     </section>
 
     <!-- PROTOSEM DEDICATED SECTION -->
-    <section id="protosem" class="space-y-10 pt-10 border-t border-slate-800/80" data-aos="fade-up">
+    <section id="protosem" class="space-y-10 pt-10 border-t border-blue-100/80" data-aos="fade-up">
       
       <!-- Section Intro & Header -->
       <div class="space-y-6">
@@ -524,7 +525,7 @@
             <span>PROTOSEM</span>
           </div>
 
-          <div class="flex items-center space-x-2 text-xs text-slate-400 font-medium">
+          <div class="flex items-center space-x-2 text-xs text-slate-500 font-medium">
             <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
             <span>20-Week Structured Professional Journey</span>
           </div>
@@ -534,81 +535,81 @@
           <div class="lg:col-span-8 space-y-4">
             <div class="space-y-2">
               <span class="text-xs font-bold text-brand-400 uppercase tracking-widest">Innovation Engineer Trainee</span>
-              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+              <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
                 PRICE ProtoSem
               </h2>
-              <p class="text-sm sm:text-base font-semibold text-slate-300">
+              <p class="text-sm sm:text-base font-semibold text-slate-600">
                 20-Week Industry-Integrated Innovation Programme
               </p>
             </div>
 
-            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
               Selected for a 20-week industry-integrated innovation programme focused on solving real-world retail and commerce challenges through AI, analytics, intelligent systems, IoT, prototyping, and entrepreneurship.
             </p>
-            <p class="text-slate-400 text-sm leading-relaxed">
+            <p class="text-slate-500 text-sm leading-relaxed">
               Working with industry problem statements to explore, develop, and validate practical technology solutions beyond conventional classroom learning.
             </p>
           </div>
 
           <!-- Programme Meta Highlight Card -->
           <div class="lg:col-span-4 bento-card rounded-2xl p-5 space-y-3.5 border-brand-500/25">
-            <div class="flex items-center justify-between text-xs font-bold text-slate-300 pb-2 border-b border-slate-800">
+            <div class="flex items-center justify-between text-xs font-bold text-slate-600 pb-2 border-b border-blue-100">
               <span class="text-brand-300 flex items-center gap-1.5"><i class="fa-solid fa-compass"></i> Programme Architecture</span>
-              <span class="text-[11px] text-slate-400">PRICE Cohort</span>
+              <span class="text-[11px] text-slate-500">PRICE Cohort</span>
             </div>
             <div class="grid grid-cols-2 gap-2 text-xs">
-              <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+              <div class="p-2.5 rounded-xl bg-white/80 border border-blue-100 text-center">
                 <div class="text-lg font-black text-brand-300">20</div>
-                <div class="text-[10px] text-slate-400 font-medium">Weeks Total</div>
+                <div class="text-[10px] text-slate-500 font-medium">Weeks Total</div>
               </div>
-              <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 text-center">
+              <div class="p-2.5 rounded-xl bg-white/80 border border-blue-100 text-center">
                 <div class="text-lg font-black text-blue-400">04</div>
-                <div class="text-[10px] text-slate-400 font-medium">Core Phases</div>
+                <div class="text-[10px] text-slate-500 font-medium">Core Phases</div>
               </div>
             </div>
-            <div class="p-2.5 rounded-xl bg-slate-900/60 border border-slate-800 text-[11px] text-slate-300 flex items-center justify-between">
-              <span class="text-slate-400"><i class="fa-solid fa-tag mr-1 text-brand-400"></i> Track</span>
-              <span class="font-semibold text-white">Retail & Commerce Tech</span>
+            <div class="p-2.5 rounded-xl bg-white/60 border border-blue-100 text-[11px] text-slate-600 flex items-center justify-between">
+              <span class="text-slate-500"><i class="fa-solid fa-tag mr-1 text-brand-400"></i> Track</span>
+              <span class="font-semibold text-slate-900">Retail & Commerce Tech</span>
             </div>
           </div>
         </div>
 
         <!-- DOMAIN / FOCUS DISCIPLINE TAGS -->
         <div class="space-y-3 pt-2">
-          <span class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-2">
             <i class="fa-solid fa-layer-group text-brand-400"></i> Programme Focus Disciplines
           </span>
           <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
             
-            <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800/80 hover:border-brand-500/40 transition-all group">
+            <div class="p-3 rounded-xl bg-white/70 border border-blue-100/80 hover:border-brand-500/40 transition-all group">
               <div class="w-8 h-8 rounded-lg bg-blue-500/15 text-blue-400 flex items-center justify-center text-xs mb-2 group-hover:scale-110 transition-transform">
                 <i class="fa-solid fa-store"></i>
               </div>
               <div class="text-xs font-bold text-slate-200 leading-snug">Phygital Retail & Intelligent Commerce</div>
             </div>
 
-            <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800/80 hover:border-brand-500/40 transition-all group">
+            <div class="p-3 rounded-xl bg-white/70 border border-blue-100/80 hover:border-brand-500/40 transition-all group">
               <div class="w-8 h-8 rounded-lg bg-indigo-500/15 text-indigo-400 flex items-center justify-center text-xs mb-2 group-hover:scale-110 transition-transform">
                 <i class="fa-solid fa-brain"></i>
               </div>
               <div class="text-xs font-bold text-slate-200 leading-snug">AI & Analytics</div>
             </div>
 
-            <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800/80 hover:border-brand-500/40 transition-all group">
+            <div class="p-3 rounded-xl bg-white/70 border border-blue-100/80 hover:border-brand-500/40 transition-all group">
               <div class="w-8 h-8 rounded-lg bg-cyan-500/15 text-cyan-400 flex items-center justify-center text-xs mb-2 group-hover:scale-110 transition-transform">
                 <i class="fa-solid fa-network-wired"></i>
               </div>
               <div class="text-xs font-bold text-slate-200 leading-snug">Intelligent Systems & IoT</div>
             </div>
 
-            <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800/80 hover:border-brand-500/40 transition-all group">
+            <div class="p-3 rounded-xl bg-white/70 border border-blue-100/80 hover:border-brand-500/40 transition-all group">
               <div class="w-8 h-8 rounded-lg bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-xs mb-2 group-hover:scale-110 transition-transform">
                 <i class="fa-solid fa-cube"></i>
               </div>
               <div class="text-xs font-bold text-slate-200 leading-snug">Prototyping</div>
             </div>
 
-            <div class="p-3 rounded-xl bg-slate-900/70 border border-slate-800/80 hover:border-brand-500/40 transition-all group col-span-2 sm:col-span-1">
+            <div class="p-3 rounded-xl bg-white/70 border border-blue-100/80 hover:border-brand-500/40 transition-all group col-span-2 sm:col-span-1">
               <div class="w-8 h-8 rounded-lg bg-amber-500/15 text-amber-400 flex items-center justify-center text-xs mb-2 group-hover:scale-110 transition-transform">
                 <i class="fa-solid fa-rocket"></i>
               </div>
@@ -623,19 +624,19 @@
           
           <!-- Subtle Milestone Rail: 01 ━━━━ 05 ━━━━ 10 ━━━━ 15 ━━━━ 20 -->
           <div class="space-y-2">
-            <div class="flex justify-between items-center text-xs font-bold text-slate-400">
+            <div class="flex justify-between items-center text-xs font-bold text-slate-500">
               <span>Programme Timeline Architecture</span>
               <span class="text-brand-300">20-Week Progression</span>
             </div>
             
             <div class="relative pt-2 pb-1">
-              <div class="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden relative">
+              <div class="h-1.5 w-full bg-blue-50 rounded-full overflow-hidden relative">
                 <div class="h-full bg-gradient-to-r from-brand-600 via-indigo-500 to-brand-blue w-full opacity-70"></div>
               </div>
-              <div class="flex justify-between items-center text-[11px] font-extrabold text-slate-400 mt-2">
+              <div class="flex justify-between items-center text-[11px] font-extrabold text-slate-500 mt-2">
                 <div class="flex flex-col items-center">
                   <span class="w-2.5 h-2.5 rounded-full bg-brand-500 ring-4 ring-brand-500/20 -mt-3.5 mb-1.5"></span>
-                  <span class="text-white">WK 00</span>
+                  <span class="text-slate-900">WK 00</span>
                 </div>
                 <div class="flex flex-col items-center">
                   <span class="w-2.5 h-2.5 rounded-full bg-indigo-500 ring-4 ring-indigo-500/20 -mt-3.5 mb-1.5"></span>
@@ -651,30 +652,30 @@
                 </div>
                 <div class="flex flex-col items-center">
                   <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 ring-4 ring-emerald-500/20 -mt-3.5 mb-1.5"></span>
-                  <span class="text-white">WK 19</span>
+                  <span class="text-slate-900">WK 19</span>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Phase Navigation Filter Buttons -->
-          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-slate-800/80">
-            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Phase Navigation:</span>
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-blue-100/80">
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Phase Navigation:</span>
             <div class="flex flex-wrap gap-2" id="phase-filters" role="tablist">
-              <button onclick="filterPhase('all')" class="phase-filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-brand-600 text-white shadow-sm" data-phase="all">
+              <button onclick="filterPhase('all')" class="phase-filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-brand-600 text-slate-900 shadow-sm" data-phase="all">
                 All 20 Weeks
               </button>
-              <button onclick="filterPhase(1)" class="phase-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 text-slate-300 border border-slate-800 hover:border-brand-500/40 hover:text-white" data-phase="1">
-                Phase 01 <span class="text-[10px] text-slate-400 font-normal ml-0.5">(W00–04)</span>
+              <button onclick="filterPhase(1)" class="phase-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-white text-slate-600 border border-blue-100 hover:border-brand-500/40 hover:text-white" data-phase="1">
+                Phase 01 <span class="text-[10px] text-slate-500 font-normal ml-0.5">(W00–04)</span>
               </button>
-              <button onclick="filterPhase(2)" class="phase-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 text-slate-300 border border-slate-800 hover:border-brand-500/40 hover:text-white" data-phase="2">
-                Phase 02 <span class="text-[10px] text-slate-400 font-normal ml-0.5">(W05–09)</span>
+              <button onclick="filterPhase(2)" class="phase-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-white text-slate-600 border border-blue-100 hover:border-brand-500/40 hover:text-white" data-phase="2">
+                Phase 02 <span class="text-[10px] text-slate-500 font-normal ml-0.5">(W05–09)</span>
               </button>
-              <button onclick="filterPhase(3)" class="phase-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 text-slate-300 border border-slate-800 hover:border-brand-500/40 hover:text-white" data-phase="3">
-                Phase 03 <span class="text-[10px] text-slate-400 font-normal ml-0.5">(W10–14)</span>
+              <button onclick="filterPhase(3)" class="phase-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-white text-slate-600 border border-blue-100 hover:border-brand-500/40 hover:text-white" data-phase="3">
+                Phase 03 <span class="text-[10px] text-slate-500 font-normal ml-0.5">(W10–14)</span>
               </button>
-              <button onclick="filterPhase(4)" class="phase-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-900 text-slate-300 border border-slate-800 hover:border-brand-500/40 hover:text-white" data-phase="4">
-                Phase 04 <span class="text-[10px] text-slate-400 font-normal ml-0.5">(W15–19)</span>
+              <button onclick="filterPhase(4)" class="phase-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-white text-slate-600 border border-blue-100 hover:border-brand-500/40 hover:text-white" data-phase="4">
+                Phase 04 <span class="text-[10px] text-slate-500 font-normal ml-0.5">(W15–19)</span>
               </button>
             </div>
           </div>
@@ -700,35 +701,35 @@
             <div class="w-12 h-12 rounded-2xl bg-brand-500/20 border border-brand-500/30 flex items-center justify-center text-brand-400 text-xl">
               <i class="fa-solid fa-graduation-cap"></i>
             </div>
-            <span class="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs font-semibold">Undergraduate</span>
+            <span class="px-3 py-1 rounded-lg bg-blue-50 text-slate-600 text-xs font-semibold">Undergraduate</span>
           </div>
 
           <div>
-            <h3 class="text-2xl font-bold text-white">Bachelor of Business Administration (BBA)</h3>
+            <h3 class="text-2xl font-bold text-slate-900">Bachelor of Business Administration (BBA)</h3>
             <p class="text-sm font-semibold text-brand-300 mt-1">Undergraduate Program</p>
           </div>
 
-          <p class="text-slate-300 text-sm leading-relaxed">
+          <p class="text-slate-600 text-sm leading-relaxed">
             Rigorous curriculum focused on business strategy, financial management, retail marketing, organizational dynamics, and data analytics. Applied theoretical principles into empirical market research and live corporate internships.
           </p>
 
           <div class="grid grid-cols-2 gap-2 pt-2 text-xs">
-            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-300">
+            <div class="p-2.5 rounded-lg bg-white/60 border border-blue-100 text-slate-600">
               <i class="fa-solid fa-check text-brand-400 mr-1.5"></i> Business Economics
             </div>
-            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-300">
+            <div class="p-2.5 rounded-lg bg-white/60 border border-blue-100 text-slate-600">
               <i class="fa-solid fa-check text-brand-400 mr-1.5"></i> Marketing & Retail
             </div>
-            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-300">
+            <div class="p-2.5 rounded-lg bg-white/60 border border-blue-100 text-slate-600">
               <i class="fa-solid fa-check text-brand-400 mr-1.5"></i> Financial Accounting
             </div>
-            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-300">
+            <div class="p-2.5 rounded-lg bg-white/60 border border-blue-100 text-slate-600">
               <i class="fa-solid fa-check text-brand-400 mr-1.5"></i> Operations Management
             </div>
           </div>
         </div>
 
-        <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 flex items-center justify-between">
+        <div class="mt-6 pt-4 border-t border-blue-100 text-xs text-slate-500 flex items-center justify-between">
           <span>Honors: Mahatma Gandhi Scholarship</span>
           <span class="text-brand-300 font-semibold">Academic Excellence</span>
         </div>
@@ -744,10 +745,10 @@
             <span class="px-3 py-1 rounded-lg bg-cyan-500/20 text-cyan-300 text-xs font-semibold">Future Ready</span>
           </div>
 
-          <h3 class="text-2xl font-bold text-white">Innovation & Growth Vision</h3>
+          <h3 class="text-2xl font-bold text-slate-900">Innovation & Growth Vision</h3>
           
-          <p class="text-slate-300 text-sm leading-relaxed">
-            I am driven by the intersection of <span class="text-white font-medium">emerging technologies</span> and <span class="text-white font-medium">high-impact business strategy</span>. My goal is to help modern organizations identify untapped market opportunities, streamline operations, and scale retail & venture models.
+          <p class="text-slate-600 text-sm leading-relaxed">
+            I am driven by the intersection of <span class="text-slate-900 font-medium">emerging technologies</span> and <span class="text-slate-900 font-medium">high-impact business strategy</span>. My goal is to help modern organizations identify untapped market opportunities, streamline operations, and scale retail & venture models.
           </p>
 
           <div class="space-y-3 pt-2">
@@ -755,18 +756,18 @@
               <div class="w-6 h-6 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center shrink-0 mt-0.5">
                 <i class="fa-solid fa-chart-column"></i>
               </div>
-              <p class="text-slate-300"><strong class="text-white">Data-Backed Insights:</strong> Transforming retail footfall, market survey data, and operational metrics into actionable executive decisions.</p>
+              <p class="text-slate-600"><strong class="text-slate-900">Data-Backed Insights:</strong> Transforming retail footfall, market survey data, and operational metrics into actionable executive decisions.</p>
             </div>
             <div class="flex items-start space-x-3 text-xs">
               <div class="w-6 h-6 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 mt-0.5">
                 <i class="fa-solid fa-handshake-angle"></i>
               </div>
-              <p class="text-slate-300"><strong class="text-white">Collaborative Agility:</strong> Tested outbound leadership training and active venture incubation team dynamics.</p>
+              <p class="text-slate-600"><strong class="text-slate-900">Collaborative Agility:</strong> Tested outbound leadership training and active venture incubation team dynamics.</p>
             </div>
           </div>
         </div>
 
-        <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 flex items-center justify-between">
+        <div class="mt-6 pt-4 border-t border-blue-100 text-xs text-slate-500 flex items-center justify-between">
           <span>Target Domains: Venture Capital, Retail, Consulting</span>
           <a href="#contact" class="text-cyan-400 hover:text-cyan-300 font-semibold">Connect Today &rarr;</a>
         </div>
@@ -783,15 +784,15 @@
           <span>Let's Build Something Great</span>
         </div>
 
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Interested in collaborating or discussing opportunities?</h2>
-        <p class="text-slate-400 text-sm sm:text-base">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Interested in collaborating or discussing opportunities?</h2>
+        <p class="text-slate-500 text-sm sm:text-base">
           Whether you have an internship opportunity, venture project, market research initiative, or just want to connect, my inbox is always open!
         </p>
 
         <!-- Direct Action Buttons -->
         <div class="flex flex-wrap justify-center gap-4 pt-4">
           
-          <a href="mailto:kanishkaduraipal@gnmail.com" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-brand-600 to-brand-blue text-white shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:scale-105 transition-all flex items-center space-x-2">
+          <a href="mailto:kanishkaduraipal@gnmail.com" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-gradient-to-r from-brand-600 to-brand-blue text-slate-900 shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 hover:scale-105 transition-all flex items-center space-x-2">
             <i class="fa-regular fa-envelope"></i>
             <span>Email Kanishka</span>
           </a>
@@ -801,7 +802,7 @@
             <span>Connect on LinkedIn</span>
           </a>
 
-          <a href="resume.html" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-slate-800 text-slate-200 border border-slate-700 hover:border-brand-500/50 hover:bg-slate-700 hover:scale-105 transition-all flex items-center space-x-2">
+          <a href="resume.html" class="px-6 py-3.5 rounded-xl font-bold text-sm bg-blue-50 text-slate-200 border border-blue-200 hover:border-brand-500/50 hover:bg-slate-700 hover:scale-105 transition-all flex items-center space-x-2">
             <i class="fa-solid fa-file-lines text-brand-400"></i>
             <span>Print ATS Resume</span>
           </a>
@@ -810,7 +811,7 @@
 
         <!-- Quick Copy Toast Trigger -->
         <div class="pt-2">
-          <button onclick="copyEmail()" class="text-xs text-slate-400 hover:text-brand-300 transition-colors inline-flex items-center space-x-1.5 bg-slate-900/60 px-3 py-1.5 rounded-lg border border-slate-800">
+          <button onclick="copyEmail()" class="text-xs text-slate-500 hover:text-brand-300 transition-colors inline-flex items-center space-x-1.5 bg-white/60 px-3 py-1.5 rounded-lg border border-blue-100">
             <i class="fa-regular fa-copy"></i>
             <span id="copy-text">Click to copy email: kanishkaduraipal@gnmail.com</span>
           </button>
@@ -822,10 +823,10 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-brand-border/60 bg-brand-dark/90 py-10 mt-20 relative z-10 text-xs text-slate-500">
+  <footer class="border-t border-blue-200/60 bg-white/90 py-10 mt-20 relative z-10 text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex items-center space-x-2">
-        <span class="font-bold text-slate-300">Kanishka Duraipal</span>
+        <span class="font-bold text-slate-600">Kanishka Duraipal</span>
         <span>•</span>
         <span>BBA Portfolio &copy; <span id="year"></span></span>
       </div>
@@ -849,7 +850,7 @@
     <div class="relative w-full max-w-lg rounded-3xl bento-card p-6 sm:p-8 shadow-2xl border-brand-500/40 transform scale-95 transition-transform duration-300 space-y-6" id="modal-card">
       
       <!-- Close Button -->
-      <button onclick="closeWeekModal()" class="absolute top-5 right-5 w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-brand-500 flex items-center justify-center transition-colors">
+      <button onclick="closeWeekModal()" class="absolute top-5 right-5 w-9 h-9 rounded-xl bg-white border border-blue-100 text-slate-500 hover:text-white hover:border-brand-500 flex items-center justify-center transition-colors">
         <i class="fa-solid fa-xmark text-sm"></i>
       </button>
 
@@ -859,24 +860,24 @@
           <span id="modal-phase-badge" class="px-2.5 py-0.5 rounded-md bg-brand-500/20 text-brand-300 text-[10px] font-bold uppercase tracking-wider">
             PHASE 01
           </span>
-          <span class="text-xs text-slate-400 font-mono" id="modal-route-slug">/protosem/week-01</span>
+          <span class="text-xs text-slate-500 font-mono" id="modal-route-slug">/protosem/week-01</span>
         </div>
-        <h3 class="text-2xl sm:text-3xl font-extrabold text-white" id="modal-week-title">
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900" id="modal-week-title">
           WEEK 01
         </h3>
-        <p class="text-xs text-slate-400">PRICE ProtoSem • 20-Week Innovation Programme</p>
+        <p class="text-xs text-slate-500">PRICE ProtoSem • 20-Week Innovation Programme</p>
       </div>
 
       <!-- Modal Body Status Box -->
-      <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
+      <div class="p-5 rounded-2xl bg-white/80 border border-blue-100 space-y-3">
         <div class="flex items-center space-x-2 text-xs font-semibold text-amber-400">
           <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
           <span>Field Notes in Progress</span>
         </div>
-        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
           The comprehensive weekly dispatch, field notes, and applied innovation case study for this milestone are currently being documented.
         </p>
-        <div class="pt-2 border-t border-slate-800 text-[11px] text-slate-400 flex items-center justify-between">
+        <div class="pt-2 border-t border-blue-100 text-[11px] text-slate-500 flex items-center justify-between">
           <span>Programme Track: Retail & Commerce</span>
           <span class="text-brand-300">Archive Milestone</span>
         </div>
@@ -884,7 +885,7 @@
 
       <!-- Modal Action Buttons -->
       <div class="flex items-center justify-between gap-3 pt-2">
-        <button onclick="closeWeekModal()" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition-all">
+        <button onclick="closeWeekModal()" class="w-full py-2.5 px-4 rounded-xl bg-blue-50 hover:bg-slate-700 text-slate-200 text-xs font-bold transition-all">
           Close Archive View
         </button>
       </div>
@@ -997,17 +998,17 @@
         return `
           <div class="space-y-4 phase-group" data-phase-group="${phase.id}">
             <!-- Phase Milestone Header -->
-            <div class="flex flex-wrap items-center justify-between gap-3 p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+            <div class="flex flex-wrap items-center justify-between gap-3 p-4 rounded-2xl bg-white/60 border border-blue-100/80">
               <div class="flex items-center space-x-3">
                 <div class="w-8 h-8 rounded-xl bg-brand-500/20 text-brand-300 border border-brand-500/30 flex items-center justify-center font-bold text-xs">
                   0${phase.id}
                 </div>
                 <div>
-                  <h4 class="text-sm font-bold text-white">${phase.name} <span class="text-xs text-slate-400 font-normal ml-1.5">• ${phase.range}</span></h4>
-                  <p class="text-[11px] text-slate-400">${phase.desc}</p>
+                  <h4 class="text-sm font-bold text-slate-900">${phase.name} <span class="text-xs text-slate-500 font-normal ml-1.5">• ${phase.range}</span></h4>
+                  <p class="text-[11px] text-slate-500">${phase.desc}</p>
                 </div>
               </div>
-              <span class="text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 border border-slate-700/60">
+              <span class="text-[11px] font-semibold px-2.5 py-1 rounded-lg bg-blue-50 text-slate-600 border border-blue-200/60">
                 5 Dispatches
               </span>
             </div>
@@ -1023,17 +1024,17 @@
 
                   <!-- Card Top Metadata -->
                   <div class="flex items-center justify-between text-xs">
-                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 group-hover:text-brand-300 transition-colors">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 group-hover:text-brand-300 transition-colors">
                       P0${w.phase}
                     </span>
-                    <span class="w-6 h-6 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 group-hover:text-white group-hover:border-brand-500/50 flex items-center justify-center text-[10px] transition-all">
+                    <span class="w-6 h-6 rounded-lg bg-white border border-blue-100 text-slate-500 group-hover:text-white group-hover:border-brand-500/50 flex items-center justify-center text-[10px] transition-all">
                       <i class="fa-solid fa-arrow-right -rotate-45 group-hover:rotate-0 transition-transform duration-300"></i>
                     </span>
                   </div>
 
                   <!-- Week Label -->
                   <div class="space-y-1 my-3">
-                    <div class="text-lg font-black tracking-tight text-white group-hover:text-brand-300 transition-colors">
+                    <div class="text-lg font-black tracking-tight text-slate-900 group-hover:text-brand-300 transition-colors">
                       WEEK ${w.padded}
                     </div>
                     ${w.status === 'published' ? `
@@ -1042,7 +1043,7 @@
                       <span>Published Story</span>
                     </div>
                     ` : `
-                    <div class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                    <div class="text-[10px] font-semibold text-slate-500 uppercase tracking-wider flex items-center gap-1.5">
                       <span class="w-1.5 h-1.5 rounded-full bg-indigo-400/80"></span>
                       <span class="group-hover:hidden">Coming Soon</span>
                       <span class="hidden group-hover:inline normal-case text-brand-300 tracking-normal">This is a future story / blog.</span>
@@ -1051,7 +1052,7 @@
                   </div>
 
                   <!-- Card Bottom Detail -->
-                  <div class="pt-2 border-t border-slate-800/80 text-[10px] text-slate-400 group-hover:text-slate-300 flex items-center justify-between transition-colors">
+                  <div class="pt-2 border-t border-blue-100/80 text-[10px] text-slate-500 group-hover:text-slate-300 flex items-center justify-between transition-colors">
                     <span class="truncate pr-2">${w.title || 'Field Notes'}</span>
                     <span class="font-mono shrink-0">#${w.padded}</span>
                   </div>
